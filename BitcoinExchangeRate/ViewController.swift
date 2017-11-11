@@ -18,17 +18,18 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        getExchangeRate()
+    }
+    
+    private func getExchangeRate() {
         BitcoinService.shared.getExchangeRate { bitcoinExchange in
             self.exchangeRate.text = bitcoinExchange.last.currency
             self.dateOccurency.text = bitcoinExchange.date.formattedValue
         }
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func refresh(_ sender: Any) {
+        getExchangeRate()
     }
-
-
 }
 

@@ -39,16 +39,26 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GfA-p3-g6L">
+                                <rect key="frame" x="16" y="121" width="343" height="30"/>
+                                <state key="normal" title="Atualizar"/>
+                                <connections>
+                                    <action selector="refresh:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ec4-Ce-iNF"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="YSN-Ef-fbU" firstAttribute="trailing" secondItem="DMS-hO-eGe" secondAttribute="trailing" id="7b4-oW-vDr"/>
                             <constraint firstItem="PQS-Cq-6O6" firstAttribute="trailing" secondItem="YSN-Ef-fbU" secondAttribute="trailing" id="9dE-F2-7Aq"/>
+                            <constraint firstItem="GfA-p3-g6L" firstAttribute="leading" secondItem="DMS-hO-eGe" secondAttribute="leading" id="9eR-sg-b33"/>
                             <constraint firstItem="PQS-Cq-6O6" firstAttribute="leading" secondItem="YSN-Ef-fbU" secondAttribute="leading" id="Bh4-s8-flE"/>
                             <constraint firstItem="PQS-Cq-6O6" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="HHr-9g-NNW"/>
                             <constraint firstItem="YSN-Ef-fbU" firstAttribute="top" secondItem="PQS-Cq-6O6" secondAttribute="bottom" constant="8" symbolic="YES" id="ZRi-cN-Rb7"/>
                             <constraint firstItem="PQS-Cq-6O6" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="epY-5i-1L4"/>
                             <constraint firstItem="PQS-Cq-6O6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="eqa-o7-I5F"/>
+                            <constraint firstItem="GfA-p3-g6L" firstAttribute="trailing" secondItem="DMS-hO-eGe" secondAttribute="trailing" id="rMV-fK-9GG"/>
+                            <constraint firstItem="GfA-p3-g6L" firstAttribute="top" secondItem="DMS-hO-eGe" secondAttribute="bottom" constant="8" symbolic="YES" id="wxG-yg-amv"/>
                             <constraint firstItem="YSN-Ef-fbU" firstAttribute="leading" secondItem="DMS-hO-eGe" secondAttribute="leading" id="yUm-fS-ZqS"/>
                             <constraint firstItem="DMS-hO-eGe" firstAttribute="top" secondItem="YSN-Ef-fbU" secondAttribute="bottom" constant="34" id="zlh-Xq-nsN"/>
                         </constraints>
