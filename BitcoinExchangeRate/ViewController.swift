@@ -7,12 +7,21 @@
 //
 
 import UIKit
+import SwiftyJSON
+import Alamofire
+import Alamofire_SwiftyJSON
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var exchangeRate: UILabel!
+    @IBOutlet weak var dateOccurency: UILabel!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        BitcoinService.shared.getExchangeRate { bitcoinExchange in
+            self.exchangeRate.text = bitcoinExchange.last.currency
+            self.dateOccurency.text = bitcoinExchange.date.formattedValue
+        }
     }
 
     override func didReceiveMemoryWarning() {
